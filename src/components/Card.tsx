@@ -59,7 +59,7 @@ export default function Card({
       <div className="bg-[--color-dark-900] px-4 py-4 text-[--color-light-100]">
         <div className="flex items-start justify-between gap-4">
           <div className="min-w-0">
-            <h3 className="truncate text-[--text-heading-3] leading-[--text-heading-3--line-height] font-[--text-heading-3--font-weight]">
+            <h3 className="truncate text-[--text-heading-3] leading-[--text-heading-3--line-height] font-semibold">
               {title}
             </h3>
             {subtitle ? (
@@ -74,7 +74,7 @@ export default function Card({
             ) : null}
           </div>
           {price !== undefined ? (
-            <div className="shrink-0 text-right text-[--text-heading-3] leading-[--text-heading-3--line-height] font-[--text-heading-3--font-weight]">
+            <div className="shrink-0 text-right text-[--text-heading-3] leading-[--text-heading-3--line-height] font-semibold">
               {typeof price === "number" ? `$${price.toFixed(2)}` : price}
             </div>
           ) : null}
