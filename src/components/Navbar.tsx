@@ -51,9 +51,9 @@ export default function Navbar({
             <Image
               src="/logo.svg"
               alt="Brand logo"
-              width={36}
-              height={36}
-              className="h-6 w-8 sm:h-7 sm:w-9"
+              width={64}
+              height={24}
+              className="h-6 w-auto sm:h-7"
               priority
             />
           </Link>
