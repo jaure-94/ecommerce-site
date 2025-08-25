@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono, Jost } from "next/font/google";
 import "./globals.css";
+import { Navbar, Footer } from "@/components";
 
 const jost = Jost({
   variable: "--font-jost",
@@ -32,7 +33,9 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${jost.className} antialiased`}
       >
-        {children}
+        <Navbar />
+          {children}
+        <Footer />
       </body>
     </html>
   );
